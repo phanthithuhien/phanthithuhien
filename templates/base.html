@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}An Thạch Kỳ{% endblock %}</title>
+    <style>
+    </style>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <nav>
+        <a href="/">Trang Chủ</a>
+        <a href="/about">Giới Thiệu</a>
+        <a href="/contact">Liên Hệ</a>
+    </nav>
+
+    {% block content %}{% endblock %}
+
+</body>
+</html>

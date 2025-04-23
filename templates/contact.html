@@ -1,0 +1,22 @@
+<!-- templates/contact.html -->
+{% extends "base.html" %}
+
+{% block title %}Liên Hệ - An Thạch Kỳ{% endblock %}
+
+{% block content %}
+    <h1>Liên hệ với chúng tôi</h1>
+    <p>Vui lòng điền thông tin của bạn vào form bên dưới:</p>
+
+    <form action="/contact" method="post">
+        <label for="name">Họ tên:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Lời nhắn:</label><br>
+        <textarea id="message" name="message" rows="4" cols="40" required></textarea><br><br>
+
+        <button type="submit">Gửi</button>
+    </form>
+{% endblock %}

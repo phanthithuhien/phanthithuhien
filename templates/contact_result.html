@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Cảm ơn bạn - An Thạch Kỳ{% endblock %}
+
+{% block content %}
+    <h2>Cám ơn bạn đã liên hệ!</h2>
+    <p><strong>Họ tên:</strong> {{ name }}</p>
+    <p><strong>Email:</strong> {{ email }}</p>
+    <p><strong>Lời nhắn:</strong> {{ message }}</p>
+
+    <p><a href="/contact">← Gửi lại một lời nhắn khác</a></p>
+{% endblock %}

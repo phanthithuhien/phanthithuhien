@@ -1,0 +1,10 @@
+<!-- templates/home.html -->
+{% extends "base.html" %}
+
+{% block title %}Trang chủ - An Thạch Kỳ{% endblock %}
+
+{% block content %}
+    <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo An Thạch Kỳ" width="400">
+    <h1 style="color: darkblue;">An Thạch Kỳ</h1>
+    <p>Chào mừng đến với trang web của tôi!</p>
+{% endblock %}
